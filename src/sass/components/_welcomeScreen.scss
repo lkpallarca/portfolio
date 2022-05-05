@@ -1,0 +1,44 @@
+body {
+  background-color: #202124;
+}
+
+.welcome-screen {
+  div {
+    cursor: pointer;
+  }
+
+  font-size: 18vmin;
+  color: hsl(0, 0%, 80%);
+  display: flex;
+  
+  .title-card {
+    margin: 20vh 0 0 15vw;
+
+    .title-text {
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        padding-left: 50px;
+      }
+
+      .subtle {
+        color: hsl(0, 0%, 80%);
+      }
+    }
+
+    .emphasis {
+      color: #ff5f00;
+    }
+  }
+
+  .title-image {
+    .my-image {
+      @include perimeter(500px, 500px);
+      position: fixed;
+      top: 50px;
+      left: 50vw;
+      z-index: -2;
+      border-radius: 100%;
+    }
+  }
+  
+}
