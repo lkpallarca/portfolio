@@ -1,0 +1,24 @@
+.my-email {
+  position: fixed;
+  bottom: 100px;
+  left: 50px;
+  color: $my-white;
+  writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-lr;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: $my-orange;
+  }
+
+  &::after {
+    position: absolute;
+    top: 210px;
+    left: 7px;
+    content: '';
+    width: 1px;
+    height: 80px;
+    background-color: $my-white;
+  }
+}

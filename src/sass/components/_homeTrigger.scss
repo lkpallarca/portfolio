@@ -1,0 +1,30 @@
+.home-trigger {
+  position: fixed;
+  top: 5vmin;
+  right: 7vmin;
+
+  .home-logo {
+    @include perimeter(8vmin, 8vmin);
+    cursor: pointer;
+    filter: $my-white-filter;
+
+    &.emphasis {
+      filter: $my-filter;
+    }
+  }
+
+  .home-title {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: -40px;
+    color: $my-white;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+
+    &.show {
+      visibility: visible;
+      left: -60px;
+    }
+  }
+}

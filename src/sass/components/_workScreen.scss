@@ -1,0 +1,19 @@
+.work-screen {
+
+  .work-title {
+    @include page-title;
+    @include pop-up(0.4s);
+  }
+
+  .work-body {
+    color: $my-white-two;
+    font-size: 3vmin;
+    margin: 5vh 0 0 11vw;
+    width: 80vw;
+    line-height: 25px;
+
+    h3 {
+      @include pop-up(0.6s);
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.contact-screen {
+  .contact-title {
+    @include page-title;
+  }
+
+  .contact-body {
+    color: $my-white-two;
+    font-size: 3vmin;
+    margin: 5vh 0 0 11vw;
+    width: 80vw;
+    line-height: 25px;
+
+    h3 {
+      width: 70%;
+    }
+  }
+}

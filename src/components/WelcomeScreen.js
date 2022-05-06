@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import myImage from '../assets/lkpallarca.jpg';
+import myImage from '../assets/lkpallarca.png';
 import '../css/index.css';
 
 export default function WelcomeScreen() {
@@ -13,21 +13,21 @@ export default function WelcomeScreen() {
     <section className='welcome-screen'>
       <div className='title-card'>
         <div 
-          className='title-text'
+          className='title-text hello'
           onMouseOver={() => setAbout(true)} 
           onMouseLeave={() => setAbout(false)} 
         >
           {about ? <div className='subtle' onClick={() => navigate('/about')}>About</div> : 'Hello.'}
         </div>
         <div 
-          className='title-text emphasis'
+          className='title-text emphasis work'
           onMouseOver={() => setWork(true)} 
           onMouseLeave={() => setWork(false)} 
         >
           {work ? <div className='subtle' onClick={() => navigate('/work')}>Work</div> : 'I am'}
         </div>
         <div 
-          className='title-text emphasis'
+          className='title-text emphasis contact'
           onMouseOver={() => setContact(true)} 
           onMouseLeave={() => setContact(false)} 
         >

@@ -1,5 +1,6 @@
 body {
-  background-color: #202124;
+  background-color: $my-bgcolor;
+  @include scrollbar;
 }
 
 .welcome-screen {
@@ -8,31 +9,46 @@ body {
   }
 
   font-size: 18vmin;
-  color: hsl(0, 0%, 80%);
+  color: $my-white;
   display: flex;
   
   .title-card {
     margin: 20vh 0 0 15vw;
 
+    .hello {
+      @include pop-up(0.8s);
+    }
+
+    .work {
+      @include pop-up(1s);
+    }
+
+    .contact {
+      @include pop-up(1.2s);
+    }
+
     .title-text {
-      transition: all 0.3s ease-in-out;
+      transition: padding-left 0.3s ease-in-out;
+
       &:hover {
         padding-left: 50px;
       }
 
       .subtle {
-        color: hsl(0, 0%, 80%);
+        color: $my-white;
       }
     }
 
     .emphasis {
-      color: #ff5f00;
+      color: $my-orange;
     }
   }
 
   .title-image {
     .my-image {
       @include perimeter(500px, 500px);
+      @include pop-up(0.4s);
+      filter: brightness(80%);
       position: fixed;
       top: 50px;
       left: 50vw;

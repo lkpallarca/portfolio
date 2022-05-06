@@ -1,0 +1,51 @@
+.project {
+  @include pop-up(0.8s);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: 5vh auto 0 auto;
+  
+  &-image {
+    @include perimeter(100%, auto);
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    filter: brightness(80%);
+    transition: filter 0.2s ease-in-out;
+
+    &:hover {
+      filter: brightness(100%);
+    }
+  }
+  
+  &-infogroup {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2vh 0;
+
+    h4 {
+      font-size: 5vmin;
+      color: $my-white;
+      margin-bottom: 2vh;
+      text-align: center;
+    }
+
+    p {
+      background-color: $my-bgcolor-two;
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-size: 2.5vmin;
+      margin-bottom: 2vh;
+      text-align: center;
+    }
+
+    span {
+      font-size: 2.5vmin;
+      text-align: center;
+    }
+  }
+}
