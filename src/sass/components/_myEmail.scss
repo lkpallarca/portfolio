@@ -22,3 +22,9 @@
     background-color: $my-white;
   }
 }
+
+@media only screen and (max-width: 699px) {
+  .my-email {
+    display: none;
+  }
+}

@@ -24,7 +24,7 @@ export default function WelcomeScreen() {
           onMouseOver={() => setWork(true)} 
           onMouseLeave={() => setWork(false)} 
         >
-          {work ? <div className='subtle' onClick={() => navigate('/work')}>Work</div> : 'I am'}
+          {work ? <div className='subtle' onClick={() => navigate('/work')}>Work</div> : `I'm`}
         </div>
         <div 
           className='title-text emphasis contact'

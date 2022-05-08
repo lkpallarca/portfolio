@@ -20,7 +20,7 @@
   }
   
   &-infogroup {
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,5 +47,11 @@
       font-size: 2.5vmin;
       text-align: center;
     }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .project-infogroup {
+    line-height: 12px;
   }
 }
