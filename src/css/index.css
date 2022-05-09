@@ -84,8 +84,8 @@ body::-webkit-scrollbar-thumb:hover {
   animation-delay: 1.4s;
   animation-fill-mode: backwards;
   content: "Interactive text";
-  font-size: 12px;
-  color: hsl(0deg, 0%, 50%);
+  font-size: 14px;
+  color: hsl(0deg, 0%, 90%);
   position: absolute;
   bottom: 2.5vmin;
 }
@@ -108,51 +108,48 @@ body::-webkit-scrollbar-thumb:hover {
   width: 30vmax;
 }
 .welcome-screen .title-card .hello {
-  animation: pop 0.6s;
+  animation: pap 0.6s;
   animation-delay: 0.8s;
   animation-fill-mode: backwards;
-  -webkit-tap-highlight-color: transparent;
 }
-@keyframes pop {
+@keyframes pap {
   0% {
     opacity: 0;
-    transform: translateY(15vh);
+    transform: translateX(-15vw);
   }
   100% {
     opacity: 1;
-    transform: translateY(0%);
+    transform: translateX(0%);
   }
 }
 .welcome-screen .title-card .work {
-  animation: pop 0.6s;
+  animation: pap 0.6s;
   animation-delay: 1s;
   animation-fill-mode: backwards;
-  -webkit-tap-highlight-color: transparent;
 }
-@keyframes pop {
+@keyframes pap {
   0% {
     opacity: 0;
-    transform: translateY(15vh);
+    transform: translateX(-15vw);
   }
   100% {
     opacity: 1;
-    transform: translateY(0%);
+    transform: translateX(0%);
   }
 }
 .welcome-screen .title-card .contact {
-  animation: pop 0.6s;
+  animation: pap 0.6s;
   animation-delay: 1.2s;
   animation-fill-mode: backwards;
-  -webkit-tap-highlight-color: transparent;
 }
-@keyframes pop {
+@keyframes pap {
   0% {
     opacity: 0;
-    transform: translateY(15vh);
+    transform: translateX(-15vw);
   }
   100% {
     opacity: 1;
-    transform: translateY(0%);
+    transform: translateX(0%);
   }
 }
 .welcome-screen .title-card .title-text {
@@ -321,7 +318,137 @@ body::-webkit-scrollbar-thumb:hover {
   line-height: 25px;
 }
 .contact-screen .contact-body h3 {
+  animation: pop 0.6s;
+  animation-delay: 0.6s;
+  animation-fill-mode: backwards;
   width: 70%;
+  color: hsl(0deg, 0%, 70%);
+}
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: translateY(15vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.contact-screen .contact-body div {
+  animation: pop 0.6s;
+  animation-delay: 1.2s;
+  animation-fill-mode: backwards;
+  margin: 9vh auto 1.5vmin auto;
+  font-size: 4vmin;
+  color: hsl(0deg, 0%, 60%);
+}
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: translateY(15vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.contact-screen .contact-body p {
+  animation: pop 0.6s;
+  animation-delay: 1.4s;
+  animation-fill-mode: backwards;
+}
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: translateY(15vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.contact-screen .contact-body .contact-body-info {
+  animation: pop 0.6s;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
+  color: #ff5f00;
+  font-size: 4vmin;
+  margin: 6vh auto;
+}
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: translateY(15vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.contact-screen .contact-body .send-message {
+  width: 30vmin;
+  height: 8vmin;
+  animation: pop 0.6s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+  cursor: pointer;
+  margin: 0 1vmin;
+  -webkit-tap-highlight-color: transparent;
+  background-color: hsl(0deg, 0%, 60%);
+  color: hsl(225deg, 6%, 10%);
+  font-size: 3vmin;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+}
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: translateY(15vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.contact-screen .contact-body .send-message:hover {
+  background-color: #ff5f00;
+}
+.contact-screen .contact-body .social-group {
+  margin: 2vh auto;
+}
+.contact-screen .contact-body .social-group .socials {
+  width: 20vmin;
+  height: 8vmin;
+  animation: pap 0.6s;
+  animation-delay: 1.6s;
+  animation-fill-mode: backwards;
+  cursor: pointer;
+  color: hsl(0deg, 0%, 80%);
+  margin: 0 1vmin;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 3vmin;
+  border: none;
+  border-radius: 10px;
+}
+@keyframes pap {
+  0% {
+    opacity: 0;
+    transform: translateX(-15vw);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+.contact-screen .contact-body .social-group .fb {
+  background-color: #4868AD;
+}
+.contact-screen .contact-body .social-group .linked {
+  background-color: #0077B5;
+}
+.contact-screen .contact-body .social-group .git {
+  background-color: #4F4F4F;
 }
 
 .home-trigger {
@@ -403,11 +530,24 @@ body::-webkit-scrollbar-thumb:hover {
 .project-image {
   width: 100%;
   height: auto;
+  animation: pap 0.6s;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
   position: relative;
   cursor: pointer;
   border-radius: 10px;
   filter: brightness(80%);
   transition: filter 0.2s ease-in-out;
+}
+@keyframes pap {
+  0% {
+    opacity: 0;
+    transform: translateX(-15vw);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
 .project-image:hover {
   filter: brightness(100%);

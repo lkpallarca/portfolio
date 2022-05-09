@@ -17,8 +17,8 @@ body {
   &::after {
     @include pop-in;
     content: 'Interactive text';
-    font-size: 12px;
-    color: hsl(0, 0%, 50%);
+    font-size: 14px;
+    color: hsl(0, 0%, 90%);
     position: absolute;
     bottom: 2.5vmin;
   }
@@ -30,22 +30,18 @@ body {
   
   .title-card {
     -webkit-tap-highlight-color: transparent;
-    // margin-left: 10vmin;
     width: 30vmax;
 
     .hello {
-      @include pop-up(0.8s);
-      -webkit-tap-highlight-color: transparent;
+      @include pop-side(0.8s);
     }
 
     .work {
-      @include pop-up(1s);
-      -webkit-tap-highlight-color: transparent;
+      @include pop-side(1s);
     }
 
     .contact {
-      @include pop-up(1.2s);
-      -webkit-tap-highlight-color: transparent;
+      @include pop-side(1.2s);
     }
 
     .title-text {
@@ -67,7 +63,6 @@ body {
 
   .title-image {
     pointer-events: none;
-    // margin-right: 10vmin;
     z-index: -2;
 
     .my-image {
@@ -77,5 +72,4 @@ body {
       border-radius: 100%;
     }
   }
-  
 }

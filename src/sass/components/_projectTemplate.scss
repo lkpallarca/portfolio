@@ -8,6 +8,7 @@
   
   &-image {
     @include perimeter(100%, auto);
+    @include pop-side(0.8s);
     position: relative;
     cursor: pointer;
     border-radius: 10px;
