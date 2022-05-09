@@ -50,9 +50,14 @@ table {
   border-spacing: 0;
 }
 
+html {
+  background-color: #202124;
+  overscroll-behavior: auto;
+}
+
 body {
   background-color: #202124;
-  overscroll-behavior: none;
+  overscroll-behavior: auto;
 }
 body::-webkit-scrollbar {
   width: 0.4rem;
@@ -107,6 +112,7 @@ body::-webkit-scrollbar-thumb:hover {
 .welcome-screen .title-card {
   -webkit-tap-highlight-color: transparent;
   width: 30vmax;
+  z-index: 2;
 }
 .welcome-screen .title-card .hello {
   animation: pap 0.6s;
@@ -167,7 +173,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .welcome-screen .title-image {
   pointer-events: none;
-  z-index: -2;
 }
 .welcome-screen .title-image .my-image {
   width: 500px;
@@ -306,6 +311,9 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
+.contact-screen {
+  overflow-y: hidden;
+}
 .contact-screen .contact-title {
   color: hsl(0deg, 0%, 80%);
   font-size: 10vmin;
@@ -322,14 +330,15 @@ body::-webkit-scrollbar-thumb:hover {
   -webkit-tap-highlight-color: transparent;
   text-decoration: none;
 }
-.contact-screen .contact-body a span {
+.contact-screen .contact-body .sent {
+  margin-top: 2vh;
   color: hsl(0deg, 0%, 80%);
-  opacity: 0;
+  visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.7s ease-in;
+  transition: visibility 0.7s ease-in;
 }
-.contact-screen .contact-body a span.show {
-  opacity: 1;
+.contact-screen .contact-body .sent.show {
+  visibility: visible;
 }
 .contact-screen .contact-body h3 {
   animation: pop 0.6s;
@@ -352,7 +361,7 @@ body::-webkit-scrollbar-thumb:hover {
   animation: pop 0.6s;
   animation-delay: 1.2s;
   animation-fill-mode: backwards;
-  margin: 9vh auto 1.5vmin auto;
+  margin: 7vmin auto 1.5vmin auto;
   font-size: 4vmin;
   color: hsl(0deg, 0%, 60%);
 }

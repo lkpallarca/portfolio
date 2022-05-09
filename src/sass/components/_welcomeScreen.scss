@@ -1,6 +1,11 @@
+html {
+  background-color: $my-bgcolor;
+  overscroll-behavior: auto;
+}
+
 body {
   background-color: $my-bgcolor;
-  overscroll-behavior: none;
+  overscroll-behavior: auto;
   @include scrollbar;
 }
 
@@ -32,6 +37,7 @@ body {
   .title-card {
     -webkit-tap-highlight-color: transparent;
     width: 30vmax;
+    z-index: 2;
 
     .hello {
       @include pop-side(0.8s);
@@ -64,7 +70,6 @@ body {
 
   .title-image {
     pointer-events: none;
-    z-index: -2;
 
     .my-image {
       @include perimeter(500px, 500px);

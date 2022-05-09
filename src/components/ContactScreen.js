@@ -15,7 +15,8 @@ export default function ContactScreen() {
         <div className='contact-body-info'>
           You can press the button below to be redirected to your device's default mailing app.
         </div>
-        <a href='mailto:kencepallarca@gmail.com'><button onClick={() => setShow(true)} className='send-message'>Send a message</button><span className={show ? 'show' : null}>Please wait for your default mailing app to load, Thank you for reaching out!</span></a>
+        <a href='mailto:kencepallarca@gmail.com'><button onClick={() => setShow(true)} className='send-message'>Send a message</button></a>
+        <p className={show ? 'sent show' : 'sent'}>Please wait for your default mailing app to load, Thank you for reaching out!</p>
         <div>
           Let's get social
         </div>

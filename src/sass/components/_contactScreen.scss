@@ -1,4 +1,6 @@
 .contact-screen {
+  overflow-y: hidden;
+
   .contact-title {
     @include page-title;
   }
@@ -13,16 +15,17 @@
     a {
       -webkit-tap-highlight-color: transparent;
       text-decoration: none;
+    }
 
-      span {
-        color: $my-white;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.7s ease-in;
+    .sent {
+      margin-top: 2vh;
+      color: $my-white;
+      visibility: hidden;
+      pointer-events: none;
+      transition: visibility 0.7s ease-in;
 
-        &.show {
-          opacity: 1;
-        }
+      &.show {
+        visibility: visible;
       }
     }
 
@@ -34,7 +37,7 @@
 
     div {
       @include pop-up(1.2s);
-      margin: 9vh auto 1.5vmin auto;
+      margin: 7vmin auto 1.5vmin auto;
       font-size: 4vmin;
       color: $my-white-two;
     }
