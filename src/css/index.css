@@ -52,6 +52,7 @@ table {
 
 body {
   background-color: #202124;
+  overflow: auto;
 }
 body::-webkit-scrollbar {
   width: 0.4rem;
