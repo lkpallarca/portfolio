@@ -1,6 +1,6 @@
 body {
   background-color: $my-bgcolor;
-  overflow: auto;
+  overscroll-behavior: none;
   @include scrollbar;
 }
 

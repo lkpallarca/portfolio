@@ -52,7 +52,7 @@ table {
 
 body {
   background-color: #202124;
-  overflow: auto;
+  overscroll-behavior: none;
 }
 body::-webkit-scrollbar {
   width: 0.4rem;
