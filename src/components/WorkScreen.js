@@ -4,6 +4,7 @@ import MyEmail from './MyEmail';
 import bank from '../assets/banking-app.png';
 import slack from '../assets/messaging-app.png';
 import ProjectTemplate from './ProjectTemplate';
+import ExperienceTemplate from './ExperienceTemplate';
 
 export default function WorkScreen() {
   const projects = [
@@ -23,12 +24,39 @@ export default function WorkScreen() {
     }
   ];
 
+  const experiences = [
+    {
+      position: 'left',
+      company: 'DILG & DOH',
+      location: 'Brgy. San Isidro, Parañaque',
+      title: 'COVID-19 Frontliner Contact Tracer',
+      date: 'Aug - Nov 2021'
+    },
+    {
+      position: 'right',
+      company: 'Alorica',
+      location: 'Alphaland, Makati',
+      title: 'Technical Support Representative',
+      date: 'Nov - Jan 2020'
+    },
+    {
+      position: 'left',
+      company: 'Civil Aviation Authority of the Philippines',
+      location: 'MIA Road, Pasay',
+      title: 'Aeronautical Mobile Station, Air Traffic Service On the Job Trainee',
+      date: 'April - July 2019'
+    }
+  ]
+
   return (
     <section className='work-screen'>
       <p className='work-title'>My work</p>
-      <div className='work-body'>
+      <h3>
+        Here are my featured projects and a summary of my work experiences.
+      </h3>
+      <div className='work-projects'>
         <h3>
-          Here are my work experiences and some of my projects.
+          Featured Projects
         </h3>
         {projects.map(each => 
           (<ProjectTemplate
@@ -39,6 +67,23 @@ export default function WorkScreen() {
             foot={each.foot}
           />)
         )}
+      </div>
+      <div className='work-experiences'>
+        <h3>
+          Experiences
+        </h3>
+        {experiences.map(each => 
+          (<ExperienceTemplate
+            position={each.position}
+            company={each.company}
+            location={each.location}
+            title={each.title}
+            date={each.date}
+          />)
+        )}
+      </div>
+      <div className='resume'>
+        More info? Here's my <a href='https://drive.google.com/uc?export=download&id=1X-HxwM5oHXAkwaUXer9JeASETENeXD1F' target='blank'>resume</a>.
       </div>
       <MyEmail/>
       <HomeTrigger/>

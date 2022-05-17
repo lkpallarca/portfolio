@@ -1,0 +1,54 @@
+.experience {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  line-height: normal;
+  font-size: 2.5vmin;
+
+  .left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 5vmin;
+    text-align: right;
+  
+    &::after {
+      @include perimeter(5px, 100%);
+      position: absolute;
+      content: '';
+      right: -2.5px;
+      background-color: $my-orange;
+    }
+  }
+
+  .right {
+    position: relative;
+    padding-left: 5vmin;
+
+    &::before {
+      @include perimeter(5px, 100%);
+      position: absolute;
+      content: '';
+      left: -2.5px;
+      background-color: $my-orange;
+    }
+  }
+
+  .exp-company {
+    position: relative;
+    color: $my-white;
+    font-size: 5vmin;
+    margin-top: 5vh;
+    margin-bottom: 15px;
+  }
+
+  .exp-info {
+    margin-bottom: 10px;
+  }
+
+  .none {
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
