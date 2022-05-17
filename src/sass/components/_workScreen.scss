@@ -7,14 +7,14 @@
   h3 {
     @include pop-up(0.6s);
     color: $my-white-two;
-    font-size: 3vmin;
+    font-size: 3.5vmin;
     margin: 5vh 0 0 11vw;
   }
 
   .work-projects, .work-experiences {
     color: $my-white-two;
     font-size: 3vmin;
-    margin: 5vh 0 0 11vw;
+    margin: 3vh 0 0 11vw;
     width: 80vw;
     line-height: 25px;
 
@@ -27,8 +27,8 @@
 
   .resume {
     color: $my-white;
-    font-size: 2.5vmin;
-    margin: 12vh 0 6vh 11vw;
+    font-size: 3.5vmin;
+    margin: 6vh 0 3vh 11vw;
 
     a {
       text-decoration: none;

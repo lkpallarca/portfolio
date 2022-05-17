@@ -161,9 +161,10 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .welcome-screen .title-card .title-text {
   transition: padding-left 0.3s ease-in-out;
+  padding-left: 10px;
 }
 .welcome-screen .title-card .title-text:hover {
-  padding-left: 20px;
+  padding-left: 30px;
 }
 .welcome-screen .title-card .title-text .subtle {
   color: hsl(0deg, 0%, 80%);
@@ -217,7 +218,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .about-screen .about-body {
   color: hsl(0deg, 0%, 60%);
-  font-size: 3vmin;
+  font-size: 3.5vmin;
   margin: 5vh 0 0 11vw;
   width: 80vw;
   line-height: 25px;
@@ -293,7 +294,7 @@ body::-webkit-scrollbar-thumb:hover {
   animation-delay: 0.6s;
   animation-fill-mode: backwards;
   color: hsl(0deg, 0%, 60%);
-  font-size: 3vmin;
+  font-size: 3.5vmin;
   margin: 5vh 0 0 11vw;
 }
 @keyframes pop {
@@ -309,7 +310,7 @@ body::-webkit-scrollbar-thumb:hover {
 .work-screen .work-projects, .work-screen .work-experiences {
   color: hsl(0deg, 0%, 60%);
   font-size: 3vmin;
-  margin: 5vh 0 0 11vw;
+  margin: 3vh 0 0 11vw;
   width: 80vw;
   line-height: 25px;
 }
@@ -332,8 +333,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .work-screen .resume {
   color: hsl(0deg, 0%, 80%);
-  font-size: 2.5vmin;
-  margin: 12vh 0 6vh 11vw;
+  font-size: 3.5vmin;
+  margin: 6vh 0 3vh 11vw;
 }
 .work-screen .resume a {
   text-decoration: none;
@@ -622,12 +623,14 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: hsl(225deg, 6%, 10%);
   border-radius: 10px;
   padding: 10px 20px;
-  font-size: 2.5vmin;
+  font-size: 3.5vmin;
   margin-bottom: 2vh;
   text-align: center;
+  line-height: 4vmin;
 }
 .project-infogroup span {
-  font-size: 2.5vmin;
+  line-height: 4vmin;
+  font-size: 3.5vmin;
   text-align: center;
 }
 
@@ -641,7 +644,7 @@ body::-webkit-scrollbar-thumb:hover {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   line-height: normal;
-  font-size: 2.5vmin;
+  font-size: 3.5vmin;
 }
 .experience .left {
   position: relative;
@@ -675,11 +678,11 @@ body::-webkit-scrollbar-thumb:hover {
   position: relative;
   color: hsl(0deg, 0%, 80%);
   font-size: 5vmin;
-  margin-top: 5vh;
-  margin-bottom: 15px;
+  margin-top: 2.5vh;
+  margin-bottom: 10px;
 }
 .experience .exp-info {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .experience .none {
   visibility: hidden;
