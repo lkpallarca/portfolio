@@ -1,4 +1,5 @@
 import React from 'react';
+import getResumeLink from '../utils/resumeLink';
 import HomeTrigger from './HomeTrigger';
 import MyEmail from './MyEmail';
 
@@ -35,7 +36,7 @@ export default function AboutScreen() {
           </ul>
         </div>
         <div>
-          More info? Here's my <a href='https://drive.google.com/uc?export=download&id=1X-HxwM5oHXAkwaUXer9JeASETENeXD1F' target='blank'>resume</a>.
+          More info? Here's my <a href={getResumeLink()} target='blank'>resume</a>.
         </div>
       </div>
       <MyEmail/>

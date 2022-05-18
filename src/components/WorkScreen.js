@@ -5,6 +5,7 @@ import bank from '../assets/banking-app.png';
 import slack from '../assets/messaging-app.png';
 import ProjectTemplate from './ProjectTemplate';
 import ExperienceTemplate from './ExperienceTemplate';
+import getResumeLink from '../utils/resumeLink';
 
 export default function WorkScreen() {
   const projects = [
@@ -83,7 +84,7 @@ export default function WorkScreen() {
         )}
       </div>
       <div className='resume'>
-        More info? Here's my <a href='https://drive.google.com/uc?export=download&id=1X-HxwM5oHXAkwaUXer9JeASETENeXD1F' target='blank'>resume</a>.
+        More info? Here's my <a href={getResumeLink()} target='blank'>resume</a>.
       </div>
       <MyEmail/>
       <HomeTrigger/>
