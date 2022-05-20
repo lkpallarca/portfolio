@@ -221,7 +221,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 3.5vmin;
   margin: 5vh 0 0 11vw;
   width: 80vw;
-  line-height: 25px;
+  line-height: 1.5;
 }
 .about-screen .about-body h3 {
   color: hsl(0deg, 0%, 70%);
