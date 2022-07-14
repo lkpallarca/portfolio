@@ -26,13 +26,17 @@ export default function AboutScreen() {
             <li>Html</li>
             <li>Css</li>
             <li>Sass</li>
+            <li>Tailwind Css</li>
             <li>Javascript (ES6+)</li>
+            <li>React</li>
           </ul>
           <ul>
-            <li>React</li>
             <li>Git</li>
+            <li>Heroku</li>
             <li>Ruby</li>
+            <li>Postgresql</li>
             <li>Ruby on Rails</li>
+            <li>Python</li>
           </ul>
         </div>
         <div>
