@@ -6,7 +6,7 @@ import wednesday from '../assets/wednesday-app.png';
 export default function projects() {
   const projects = [
     {
-      link : 'https://wednesday-trading.herokuapp.com/',
+      link : 'https://github.com/lkpallarca/wednesday',
       snip : wednesday,
       title : 'Wednesday',
       body : 'A stock trading app simulation for asset trading primarily featuring IEX Finance market information. Visual representation of data helps the Admin and User roles to overview activities.',
