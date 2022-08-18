@@ -2,9 +2,17 @@ import bank from '../assets/banking-app.png';
 import slack from '../assets/messaging-app.png';
 import dates_and_tasks from '../assets/dates-and-tasks-app.png';
 import wednesday from '../assets/wednesday-app.png';
+import private_dermatology from '../assets/private-dermatology.png';
 
 export default function projects() {
   const projects = [
+    {
+      link : 'https://github.com/eefborromeo/private-dermatology',
+      snip : private_dermatology,
+      title : 'Private Dermatology',
+      body : 'An appointment management and e-commerce app for a dermatology clinic.',
+      foot : 'Features my integration of Paymongo API to handle cash transaction simulation and Google API for Omniauth login access and calendar events. Developed using Ruby on Rails.'
+    },
     {
       link : 'https://github.com/lkpallarca/wednesday',
       snip : wednesday,
