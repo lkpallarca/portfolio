@@ -7,7 +7,7 @@ import private_dermatology from '../assets/private-dermatology.png';
 export default function projects() {
   const projects = [
     {
-      link : 'https://github.com/eefborromeo/private-dermatology',
+      link : 'https://github.com/lkpallarca/private-dermatology',
       snip : private_dermatology,
       title : 'Private Dermatology',
       body : 'An appointment management and e-commerce app for a dermatology clinic.',
