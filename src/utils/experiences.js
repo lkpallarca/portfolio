@@ -1,6 +1,13 @@
 export default function experiences() {
   const experiences = [
     {
+      position: 'left',
+      company: 'Avion School',
+      location: 'Philippines',
+      title: 'Software Developer',
+      date: 'Dec 2021 - Aug 2022'
+    },
+    {
       position: 'right',
       company: 'DILG & DOH',
       location: 'Brgy. San Isidro, Parañaque',
