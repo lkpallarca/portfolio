@@ -2,6 +2,7 @@ import React from 'react';
 import getResumeLink from '../utils/resumeLink';
 import HomeTrigger from './HomeTrigger';
 import MyEmail from './MyEmail';
+import TechStack from './TechStack';
 
 export default function AboutScreen() {
   return (
@@ -22,22 +23,7 @@ export default function AboutScreen() {
           Here are some of the languages and tools that I have learned/am learning throughout my journey as an aspiring software developer.
         </div>
         <div className='about-list'>
-          <ul>
-            <li>Html</li>
-            <li>Css</li>
-            <li>Sass</li>
-            <li>Tailwind Css</li>
-            <li>Javascript (ES6+)</li>
-            <li>React</li>
-          </ul>
-          <ul>
-            <li>Git</li>
-            <li>Heroku</li>
-            <li>Ruby</li>
-            <li>Postgresql</li>
-            <li>Ruby on Rails</li>
-            <li>Python</li>
-          </ul>
+          <TechStack />
         </div>
         <div>
           More info? Here's my <a href={getResumeLink()} target='blank'>resume</a>.
